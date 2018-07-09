@@ -65,4 +65,8 @@ class Student
     students = <<-SQL
     SELECT COUNT(name) FROM students
     WHERE grade = 9
+    SQL
+
+    DB[:conn].execute(students)
+
 end
